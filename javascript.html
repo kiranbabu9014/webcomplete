@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="p2">Hello World!</p>
+
+<script>
+document.getElementById("p2").style.color = "blue";
+document.getElementById("p2").style.fontFamily = "Arial";
+document.getElementById("p2").style.fontSize = "larger";
+</script>
+
+
+<h1 id="id1">My java script</h1>
+
+<botton type="button" 
+onclick="document.getElementById('id1').style.color = 'green'">
+click me!</button>
+
+<p id="demo">introduction of js.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "hello world.";
+}
+
+</script>
+
+
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+
+<h2>JavaScript form</h2>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+Father Name: <input type="text" name="fname"><br>
+ Mother Name: <input type="text" name="fname"><br>
+password<input type='possword' name='password'><br>
+gender:<input type='radio' name='gender'>male
+<input type='radio' name='gender'>female<br>
+ hobbies:<input type='checkbox' name=''>playing circket<br>
+<input type='checkbox' name='music'>listing music<br>
+date of birth:<input type='date'>
+selection your deparment:<select> <option value=it>information tech</option>
+<option value=it>mech</option>
+ <option value=it>cse</option></select> 
+<br>address:<textarea   rows='5' cols='25' name='address'></textarea>
+upload images:<input type='file' name='image'>
+  <input type="submit" value="Submit">
+</form>
+
+
+
+
+</body>
+</html> 
+
+
